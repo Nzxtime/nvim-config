@@ -10,7 +10,7 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- line wrapping
-opt.wrap = false -- disable line wrapping
+opt.wrap = true -- enable line wrapping
 
 -- search settings
 opt.ignorecase = true
