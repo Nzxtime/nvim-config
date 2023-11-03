@@ -49,6 +49,13 @@ return {
       },
     }
 
+    local nvimbattery = {
+        function()
+            return require("battery").get_status_line()
+        end,
+        -- color = { fg = colors.violet, bg = colors.bg },
+    }
+
     -- configure lualine with modified theme
     lualine.setup({
       options = {
@@ -65,6 +72,7 @@ return {
           { "fileformat" },
           { "filetype" },
         },
+        lualine_y = {nvimbattery},
       },
     })
   end,
